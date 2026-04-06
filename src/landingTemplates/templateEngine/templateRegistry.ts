@@ -49,9 +49,6 @@ const StorePremiumTemplate = lazy(
 const StorePerformanceTemplate = lazy(
   () => import("../templates/store/StorePerformanceTemplate"),
 );
-const StoreFitTemplate = lazy(
-  () => import("../templates/store/StoreFitTemplate"),
-);
 
 // Company / Product site
 const CompanySiteTemplate = lazy(
@@ -186,15 +183,6 @@ const templateRegistry: Record<string, TemplateDefinition> = {
       "Neon black athletic gear store with campaign-style promo sections, fitness products, and high-contrast product storytelling.",
     tags: ["store", "performance", "fitness", "campaign"],
     component: StorePerformanceTemplate,
-  },
-
-  "store-fit": {
-    id: "store-fit",
-    name: "Store - Fit",
-    description:
-      "Bold blue sports-fashion store with oversized typography, editorial collection blocks, testimonial rails, and a campaign-style footer contact section.",
-    tags: ["store", "editorial", "sportswear", "campaign"],
-    component: StoreFitTemplate,
   },
 
   // --- Company / Product ---
